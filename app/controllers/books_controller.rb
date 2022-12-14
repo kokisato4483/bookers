@@ -11,7 +11,7 @@ class BooksController < ApplicationController
     # 3. データをデータベースに保存するためのsaveメソッド実行
     book.save
     # 4. トップ画面へリダイレクト
-    redirect_to book_path(@book.id) 
+    redirect_to show_path(@book.id)
   end
 
   def show
@@ -21,10 +21,13 @@ class BooksController < ApplicationController
   def edit
     @book = Book.find(params[:id])
   end
-  
-  def
-    
-  end
+
+def destroy
+    book = Book.find(params[:id])  # データ（レコード）を1件取得
+    book.destroy  # データ（レコード）を削除
+    redirect_to '/books'  # 投稿一覧画面へリダイレクト
+end
+
 
   private
   # ストロングパラメータ
