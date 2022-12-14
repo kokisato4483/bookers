@@ -28,7 +28,7 @@ body {
     line-height: 18px;
     margin: 33px;
 }
-/*文字協調*/
+
 strong {
     font-weight: bold;
 }
@@ -39,7 +39,6 @@ p {
     margin: 33px;
 }
 
-/*ボタン用*/
   a{
     color: #666;
   }
@@ -106,3 +105,24 @@ table {
     margin-top: 10px;
 }
 
+.error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.center{
+    text-align: left
+}
+
+
+.editingtitle{
+
+    margin-bottom: 10px;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;;
+}
